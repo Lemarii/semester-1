@@ -11,13 +11,13 @@ You can complete this task on the worksheet pdf if you prefer.
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
 |     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
-|     git status              | |
+|     ls                      | | shows all current files in a directory
+|     cd directory_name       | | Takes you to the files locatin
+|     cd ..                   | | Allows you to go back to the previous file location 
+|     cd -                    | | shows all directories before current one
+|     mkdir directory_name    | | Creates a folder 
+|     touch filename          | | Creates a file
+|     git status              | | Shows what changes have and havent been staged for commit
 |     git add -A              | |
 |     git commit -m ""        | |
 |     git push                | |
