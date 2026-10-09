@@ -10,16 +10,16 @@ You can complete this task on the worksheet pdf if you prefer.
 
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
-|     pwd                     | shows the current location of the terminal |
-|     ls                      | | shows all current files in a directory
-|     cd directory_name       | | Takes you to the files locatin
-|     cd ..                   | | Allows you to go back to the previous file location 
-|     cd -                    | | shows all directories before current one
-|     mkdir directory_name    | | Creates a folder 
-|     touch filename          | | Creates a file
-|     git status              | | Shows what changes have and havent been staged for commit
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     pwd                     | shows the current working directory location in the terminal |
+|     ls                      | lists all files and folders in the current directory |
+|     cd directory_name       | changes the current working directory to the specified folder |
+|     cd ..                   | moves up one directory level to the parent folder |
+|     cd -                    | switches back to the previous directory you were in |
+|     mkdir directory_name    | creates a new directory or folder |
+|     touch filename          | creates a new empty file or updates the timestamp of an existing file |
+|     git status              | shows which files have changed, are staged, or are untracked in the repository |
+|     git add -A              | stages all changes in the repository so they are ready to commit |
+|     git commit -m ""       | creates a new commit with a message describing the changes |
+|     git push                | uploads local commits to the remote repository on GitHub |
+|     git pull                | downloads and merges the latest changes from the remote repository |
 
