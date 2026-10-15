@@ -1,3 +1,12 @@
+from pathlib import Path
+
+for filename in ("story.txt", "story2.txt", "glasses.txt"):
+	file_path = Path(__file__).with_name(filename)
+	with file_path.open(encoding="utf-8") as text_file:
+		words = text_file.read().split()
+	word_count = len(words)
+	print(f"{filename}: {word_count}")
+
 # Week 1.3, Session 2: Word Counter
 
 # We want to read in a text file, and calculate how many words are in it. 

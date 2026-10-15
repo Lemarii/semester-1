@@ -1,3 +1,18 @@
+log_path = Path(__file__).with_name("site.log")
+
+try:
+	with log_path.open(newline="", encoding="utf-8") as log_file:
+		for row in csv.DictReader(log_file):
+			if row["Request"] == "POST /login" and row["Status_Code"] == "401":
+				print(
+					f"IP address {row['IP_Address']} failed to login "
+					f"at {row['Time']} on {row['Date']}"
+				)
+except FileNotFoundError:
+	print(f"Log file not found: {log_path}")
+
+import csv
+from pathlib import Path
 # Week 1.3, Session 2: Log Data Filtering
 
 # We want to find all failed login attempts based on Request and Status code 
