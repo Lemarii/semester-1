@@ -10,6 +10,9 @@ def filter_positive_numbers(numbers):
     """
     Filters out positive numbers from the list, keeping only the negative ones.
     The function returns a list of all the positive numbers in the input.
+    
+    Returns a list containing only the positive numbers from the input.
+    Zero and negative numbers are excluded.
 
     Args:
         numbers (list of int): A list of integers.

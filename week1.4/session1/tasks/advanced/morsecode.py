@@ -31,6 +31,8 @@ def string_to_morse_code(string):
              '.': '.-.-.-', '-': '-....-', '+': '.-.-.',  '"': '.-..-.',
              '?': '..--..', '/': '-..-.'}
 
+    return " ".join(mcode[character] for character in string.upper())
+
 
 # test data
 
