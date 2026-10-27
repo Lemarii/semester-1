@@ -11,6 +11,9 @@
 
 def currency_converter(amount, from_currency, to_currency):
 
+    if amount < 0:
+        return 0.0
+
     conversion_rate = {
         'GBP': {'CNY': 9.24, 'PHP': 75.00, 'INR': 109.06},
         'CNY': {'GBP': 0.11, 'PHP': 8.12, 'INR': 11.81},
@@ -18,8 +21,11 @@ def currency_converter(amount, from_currency, to_currency):
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
 
+    if from_currency == to_currency:
+        return round(float(amount), 2)
+
     rate = conversion_rate[from_currency][to_currency]
-    return amount * rate
+    return round(amount * rate, 2)
 
 # Submit only this file currency_converter.py with the completed function.
 
